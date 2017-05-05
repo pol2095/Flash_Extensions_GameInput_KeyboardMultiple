@@ -159,7 +159,10 @@ package flash.extensions.ui
 			}
 		}
 		
-		private function dispose():void
+		/**
+		 * Disposes all resources.
+		 */
+		public function dispose():void
 		{
 			for(var i:int = 0; i < controlsDownContinially.length; i++)
 			{

@@ -121,7 +121,10 @@ package flash.extensions.ui
 			for(var i:int = 0; i < timers.length; i++) timers[i].reset();
 		}
 		
-		private function dispose():void
+		/**
+		 * Disposes all resources.
+		 */
+		public function dispose():void
 		{
 			stage.removeEventListener(flash.events.KeyboardEvent.KEY_DOWN, keyDownHandler);
 			stage.removeEventListener(flash.events.KeyboardEvent.KEY_UP, keyUpHandler);
