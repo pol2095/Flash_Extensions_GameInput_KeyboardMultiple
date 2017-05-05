@@ -13,7 +13,8 @@ This project add two extensions to Adobe Flash :
 
 ## Minimum Requirements
 
-* [Adobe AIR 19.0](https://get.adobe.com/air/) or [Adobe Flash Player 19.0](https://get.adobe.com/fr/flashplayer/)
+* flash.extensions.ui.GameInput [Adobe AIR 19.0](https://get.adobe.com/air/) or [Adobe Flash Player projector 19.0](http://www.adobe.com/support/flashplayer/debug_downloads.html)
+* flash.extensions.ui.Keyboard [Adobe AIR 19.0](https://get.adobe.com/air/) or [Adobe Flash Player 19.0](https://get.adobe.com/fr/flashplayer/)
 
 ## Library required
 
