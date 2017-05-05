@@ -45,10 +45,23 @@ package flash.extensions.ui
 			_keysDownDelay = value;
 		}
 		
+		/**
+		 * Creates a new Keyboard instance.
+		 *
+		 * @param stage The native stage.
+		 */
 		public function Keyboard(stage:Stage)
 		{
 			this.stage = stage;
 		}
+		
+		/**
+		 * Initialize this class.
+		 *
+		 * <listing version="3.0">
+		 * var keyboard:Keyboard = new Keyboard();
+		 * keyboard.init();</listing>
+		 */
 		public function init():void
 		{
 			stage.addEventListener(flash.events.KeyboardEvent.KEY_DOWN, keyDownHandler);
