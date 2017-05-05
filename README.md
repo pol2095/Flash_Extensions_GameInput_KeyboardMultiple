@@ -1,7 +1,7 @@
 # Flash Extensions GameInput and Keyboard Multiple 1.0.0
 
 Say hello to Flash Extensions GameInput and Keyboard Multiple.<br />
-This project add two ewtensions to Adobe Flash :
+This project add two extensions to Adobe Flash :
 * The GameInput class can use to manage the communications between an application and game input devices (for example: joysticks, gamepads, and wands). It can detect when a control is pressed continially or not.
 * The Keyboard class is used to build an interface that can be controlled by a user with a standard keyboard. It can detect when multiple keys are pressed continially or not.
 
