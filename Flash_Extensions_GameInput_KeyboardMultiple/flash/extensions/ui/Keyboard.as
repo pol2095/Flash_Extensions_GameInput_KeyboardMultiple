@@ -15,6 +15,11 @@ package flash.extensions.ui
 	import flash.extensions.events.KeyboardEvent;
 	
 	/**
+	 * Dispatched when a key is pressed or is continially pressed.
+	 */
+	[Event(name="keyDown", type="flash.extensions.events.KeyboardEvent")]
+	
+	/**
 	 * The Keyboard class is used to build an interface that can be controlled by a user with a standard keyboard. You can use the methods and properties of the Keyboard class without using a constructor. The properties of the Keyboard class are constants representing the keys that are most commonly used to control games.
 	 *
 	 * It can detect when a key is pressed continially.

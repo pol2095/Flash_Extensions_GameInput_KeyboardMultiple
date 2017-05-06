@@ -17,6 +17,11 @@ package flash.extensions.ui
 	import flash.extensions.events.GameInputChangeEvent;
 	
 	/**
+	 * Dispatched when a control is pressed or is continially pressed.
+	 */
+	[Event(name="change", type="flash.extensions.events.GameInputChangeEvent")]
+	
+	/**
 	 * The GameInput class is the entry point into the GameInput API. You can use this API to manage the communications between an application and game input devices (for example: joysticks, gamepads, and wands).
 	 *
 	 * It can detect when a control is pressed continially.
