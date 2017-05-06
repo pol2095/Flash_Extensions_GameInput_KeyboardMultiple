@@ -21,7 +21,7 @@ package flash.extensions.events
 		public static var KEY_DOWN:String = "keyDown";
 		
 		/**
-		 * The key code value of the key pressed or is continially pressed.
+		 * The key code value of the key pressed or continially pressed.
 		 *
 		 * <strong>Note:</strong> When an input method editor (IME) is running, keyCode does not report accurate key codes.
 		 */
