@@ -189,7 +189,7 @@ package flash.extensions.ui
 		}
 		
 		/**
-		 * Retrieves a specific device from a control.
+		 * Retrieves a specific device index from a control.
 		 *
 		 * @param control A control on an input device.
 		 */
