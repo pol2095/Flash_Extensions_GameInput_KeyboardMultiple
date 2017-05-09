@@ -165,6 +165,44 @@ package flash.extensions.ui
 		}
 		
 		/**
+		 * Indicates whether a control is active (true) or inactive (false).
+		 *
+		 * @param id The id of a control.
+		 *
+		 * @param index The index position in the list of input devices.
+		 */
+		public static function isDown(id:String, index:int):Boolean
+		{
+			var isDown:Boolean;
+			for(var i:int = 0; i < flash.ui.GameInput.numDevices; i++)
+			{
+				if( i != index ) continue;
+				var device:GameInputDevice = flash.ui.GameInput.getDeviceAt(i);
+				for(var j:int = 0; j < device.numControls; j++)
+				{
+					var control:GameInputControl = device.getControlAt(j);
+					if(control.id != id) continue;
+					if(control.value <= -0.1 || control.value >= 0.1) isDown = true;
+				}
+			}
+			return isDown;
+		}
+		
+		/**
+		 * Retrieves a specific device from a control.
+		 *
+		 * @param control A control on an input device.
+		 */
+		public static function getDeviceIndex(control:GameInputControl):int
+		{
+			for(var i:int = 0; i < flash.ui.GameInput.numDevices; i++)
+			{
+				if( flash.ui.GameInput.getDeviceAt(i) == control.device) break;
+			}
+			return i;
+		}
+		
+		/**
 		 * Disposes all resources.
 		 */
 		public function dispose():void

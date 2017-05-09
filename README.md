@@ -1,4 +1,4 @@
-# Flash Extensions GameInput and Keyboard Multiple 1.0.0
+# Flash Extensions GameInput and Keyboard Multiple 1.0.1
 
 Say hello to Flash Extensions GameInput and Keyboard Multiple.<br />
 This project add two extensions to Adobe Flash :

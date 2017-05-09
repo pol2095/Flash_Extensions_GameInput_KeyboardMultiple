@@ -68,11 +68,15 @@ package
 			var control:GameInputControl = event.gameInputControl;
 			trace("The pressed control is " +control.name+" with id: "+control.id +" value "+control.value+" \n");
 			
-			/*trace(GameInput.isSupported, GameInput.numDevices);
-			for(var i:int = 0; i < GameInput.numDevices; i++)
+			/*var index:int = GameInput.getDeviceIndex( control );
+			if(control.id == "BUTTON_6")
 			{
-				if( GameInput.getDeviceAt(i) == control.device) trace( control.device );
+				if( GameInput.isDown( "BUTTON_5", index ) )
+				{
+					trace("isDown control "+index+" : "+control.id+" and "+"BUTTON_5\n");
+				}
 			}*/
+			//trace( GameInput.isSupported, GameInput.numDevices );
 			changeHandler( control.id, control.value );
 		}
 		
@@ -127,7 +131,7 @@ package
 		
 		private function keyDownHandler(event:KeyboardEvent):void
 		{
-			switch( event.keysCode )
+			switch( event.keyCode )
 			{ 
 				case 38:
 					changeHandler( "BUTTON_16",  1 );
